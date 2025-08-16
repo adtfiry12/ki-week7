@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // membuat function
+        function halo(){
+            console.log('halo')
+        }
+
+        // memanggil
+        halo()
+
+        // function bisa di panggil berulang ulang
+        halo()
+
+        // membuat sebuah function dengan parameter namaOrang
+        function selamatPagi (namaOrang){
+            //kita bisa menggunakan variabel namaOrang yang dikirim melalui parameter
+            console.log(`selamat pagi ${namaOrang}`)
+        }
+        // function dengan beberapa parameter
+        function namaLengkap (namaDepan, namaTengah, namaBelakang){
+            console.log(`Nama saya ${namaDepan} ${namaTengah} ${namaBelakang}`)
+        }
+
+        // memanggil function dengan menambah parameter
+        selamatPagi('Aditya')
+
+        // mengirim banyak parameter, harus urut desuai yang di minta
+        namaLengkap('Aditya', 'Mukti', 'Firmanysah')
+
+
+        //function yang menghasilkan data
+
+        function helo(orang){
+            return `selamat pagi ${orang}`
+        }
+        const hasil = helo('aditya')
+        document.write(hasil)
+
+        function returnObject() {
+            return {
+                nama : 'aditya',
+                umur : 12
+            }
+        }
+
+        function returnArray(){
+            return [
+                'aditya',
+                'mukti',
+                'firmanysah'
+            ]
+        }
+
+        function cariPeringkat(nilai){
+            if(nilai >= 90){
+                return 'A'
+            } else if (nilai >= 80){
+                return 'B'
+            } else if (nilai >= 70){
+                return 'C'
+            } else if (nilai >= 60){
+                return 'D'
+            } else {
+                return 'E'
+            }
+        }
+        const result = nilai;
+        document.write(result)
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hasil"></h1>
+    <script>
+        function kalkulator(bilanganSatu, bilanganDua, operasi){
+            switch(operasi){
+                case 'penjumlahan': 
+                    hasil = bilanganSatu + bilanganDua
+                    break;
+                case 'pengurangan': 
+                    hasil = bilanganSatu - bilanganDua
+                    break;
+                case 'perkalian':
+                    hasil = bilanganSatu * bilanganDua
+                    break;
+                case 'pembagian' : 
+                    hasil = bilanganSatu / bilanganDua
+                    break
+            }
+            if(hasil <= 9){
+                pesan = 'Hasil Satuan'
+            } else if (hasil >= 10 && hasil <= 99){
+                pesan = 'Hasil Puluhan'
+            } else if (hasil >= 100 && hasil <= 999) {
+                pesan = 'Hasil Ratusan'
+            }
+            document.getElementById('hasil').innerHTML = `${operasi} ${bilanganSatu} dan ${bilanganDua} = ${hasil} <br> ${pesan}`
+        }
+
+        const format = kalkulator(6, 7, 'pengurangan')
+        
+    </script>
+</body>
+</html>
