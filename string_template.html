@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string template contoh
+        var hello = 'hello';
+        var world = 'world';
+        var helloWorld = `hello world`;
+
+        console.log(hello+" "+world);
+        console.log(helloWorld)
+
+        // string template variabel 
+        var hai = 'hai';
+        var dunia = 'dunia';
+
+        console.log(hai+" "+dunia);
+        console.log(`${hai} ${dunia}`);
+
+        // expression pada string template 
+        var nama = 'aditya';
+        var nilai = 100;
+
+        var result = `Nama saya : ${nama}, Lulus ? : ${nilai >= 75}`
+
+        console.log(result);
+
+        // multiline string
+
+        var multilineString = `
+            selamat pagi,
+            nama saya adit,
+            saya suka fiqi
+        `
+        console.log(multilineString);
+    </script>
+</body>
+</html>
